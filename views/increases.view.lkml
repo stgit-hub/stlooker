@@ -95,6 +95,32 @@ view: increases {
 
   measure: count {
     type: count
-    drill_fields: []
+    drill_fields: [detail*]
   }
+
+
+
+  # ----- Sets of fields for drilling ------
+  set: detail {
+    fields: [
+        increase_code,
+        entry_prefix,
+        entry_sufix,
+        entry,
+        herbicide_trait,
+        current_rm,
+        f,
+        h,
+        pb,
+        pw,
+        notes,
+        planting_date,
+        harvest_date,
+        bag
+    ]
+  }
+
+
+
+
 }
